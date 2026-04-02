@@ -1,45 +1,122 @@
-/* BAKERY THEME SCROLLBAR */
-::-webkit-scrollbar {
-    width: 10px;
-}
-::-webkit-scrollbar-track {
-    background: #020617;
-}
-::-webkit-scrollbar-thumb {
-    background: #1e293b;
-    border-radius: 10px;
-    border: 3px solid #020617;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: #d35400;
+/**
+ * CODE PUNCH BAKERY - FocusFlow Pro
+ * style.css - Version 2.5 (High-End Production)
+ */
+
+/* 1. THE FOUNDATION */
+:root {
+    --bakery-orange: #ea580c;
+    --bakery-orange-glow: rgba(234, 88, 12, 0.2);
+    --midnight-navy: #020617;
+    --slate-border: rgba(30, 41, 59, 0.5);
 }
 
-/* SMOOTH SCROLLING */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
-/* ENTRANCE ANIMATION */
-@keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
+body {
+    background-color: var(--midnight-navy);
+    /* Subtle radial gradient to give the page depth */
+    background-image: radial-gradient(circle at 50% -20%, #1e293b 0%, #020617 100%);
+    background-attachment: fixed;
+    overflow-x: hidden;
 }
 
-header h1, header p, header div {
+/* 2. CUSTOM BAKERY SCROLLBAR */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--midnight-navy);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 20px;
+    border: 3px solid var(--midnight-navy);
+    transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--bakery-orange);
+}
+
+/* 3. ENTRANCE ANIMATIONS */
+@keyframes bouncerFade {
+    0% { 
+        opacity: 0; 
+        transform: translateY(40px) scale(0.95); 
+    }
+    100% { 
+        opacity: 1; 
+        transform: translateY(0) scale(1); 
+    }
+}
+
+@keyframes pulseGlow {
+    0% { box-shadow: 0 0 0 0 rgba(234, 88, 12, 0.4); }
+    70% { box-shadow: 0 0 0 20px rgba(234, 88, 12, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(234, 88, 12, 0); }
+}
+
+/* Apply animation to Hero content */
+header > * {
     opacity: 0;
-    animation: fadeInUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    animation: bouncerFade 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 header h1 { animation-delay: 0.1s; }
 header p { animation-delay: 0.2s; }
-header div { animation-delay: 0.3s; }
+.animate-fade-in { animation-delay: 0.4s; }
+header .flex { animation-delay: 0.5s; }
 
-/* PRICING CARD HOVER */
+/* 4. COMPONENT STYLING */
+
+/* Pricing Card Glassmorphism */
 .pricing-card {
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 .pricing-card:hover {
     transform: translateY(-12px) scale(1.02);
-    border-color: rgba(211, 84, 0, 0.4);
+    border-color: rgba(234, 88, 12, 0.4);
+    background-color: rgba(30, 41, 59, 0.4);
+}
+
+/* The "Pro" Glow Effect */
+.pricing-card.border-orange-500 {
+    box-shadow: 0 0 40px -10px var(--bakery-orange-glow);
+}
+
+/* Button Shine Effect */
+.group:hover img {
+    filter: brightness(1.2);
+}
+
+/* 5. RESPONSIVE TWEAKS */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 3.5rem !important;
+        line-height: 1;
+    }
+    
+    .pricing-card {
+        margin-bottom: 2rem;
+    }
+}
+
+/* 6. UTILITY - TEXT GRADIENT OVERRIDE */
+.text-transparent {
+    -webkit-background-clip: text;
+    background-clip: text;
 }
