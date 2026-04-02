@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FocusFlow Pro | Code Punch Bakery</title>
-    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="icon" type="image/png" href="icon.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-[#020617] text-white selection:bg-orange-500/30 font-sans">
 
     <nav class="max-w-6xl mx-auto p-8 flex justify-between items-center relative z-20">
-        <div class="flex items-center gap-5 group cursor-pointer">
-            <img src="logo.png" alt="Code Punch Bakery" class="h-12 w-auto rounded-2xl shadow-2xl shadow-orange-500/20 border border-white/10 group-hover:scale-110 transition-transform duration-500">
-            <div class="flex flex-col">
+        <div class="flex items-center group cursor-pointer">
+            <img src="logo.png" alt="Code Punch Bakery" class="h-12 w-auto object-contain transition-transform duration-500 group-hover:scale-105">
+            <div class="flex flex-col ml-4">
                 <span class="text-2xl font-black tracking-tighter uppercase italic leading-none">Code Punch</span>
-                <span class="text-xs font-bold text-orange-500 tracking-[0.4em] uppercase mt-1">Bakery</span>
+                <span class="text-[10px] font-bold text-orange-500 tracking-[0.4em] uppercase mt-1">Bakery</span>
             </div>
         </div>
         <div class="hidden lg:flex items-center gap-10">
@@ -47,10 +47,10 @@
 
         <div class="flex flex-col items-center gap-5 mb-16 animate-fade-in group">
             <div class="relative">
-                <div class="absolute -inset-6 bg-orange-600/20 blur-2xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                <img src="icon.png" alt="FocusFlow Icon" class="relative w-28 h-28 rounded-[2rem] shadow-2xl border-8 border-[#020617] bg-[#020617] transform group-hover:rotate-6 transition-transform duration-500">
+                <div class="absolute -inset-6 bg-orange-600/25 blur-2xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                <img src="icon.png" alt="FocusFlow Extension Icon" class="relative w-28 h-28 rounded-[2rem] shadow-2xl border-8 border-[#020617] bg-[#0f172a] transform group-hover:rotate-6 transition-all duration-500">
             </div>
-            <span class="text-[10px] font-black tracking-[0.5em] text-slate-600 uppercase">Focus Flow</span>
+            <span class="text-[10px] font-black tracking-[0.5em] text-slate-600 uppercase">Extension Identity</span>
         </div>
 
         <div class="flex flex-col sm:flex-row justify-center items-center gap-8">
@@ -66,38 +66,37 @@
 
     <section id="pricing" class="max-w-4xl mx-auto py-32 px-6">
         <div class="grid md:grid-cols-2 gap-12">
-            <div class="p-12 rounded-[3rem] bg-slate-900/20 border border-slate-800/40 backdrop-blur-xl hover:border-slate-700 transition-colors">
+            <div class="pricing-card p-12 rounded-[3rem] bg-slate-900/20 border border-slate-800/40 backdrop-blur-xl">
                 <h3 class="text-sm font-black uppercase tracking-widest text-slate-500 mb-2">Freshly Baked</h3>
                 <div class="text-5xl font-black mb-10 tracking-tighter">$0</div>
                 <ul class="space-y-5 mb-12 text-slate-400 font-medium">
                     <li class="flex items-center gap-4">✅ 10 Tab Limit</li>
                     <li class="flex items-center gap-4">✅ Smart Whitelist</li>
-                    <li class="flex items-center gap-4">✅ Focus Nudges</li>
+                    <li class="flex items-center gap-4 text-xs italic opacity-50">"To keep you focused..."</li>
                 </ul>
                 <div class="w-full py-4 text-center rounded-2xl border border-slate-800 text-slate-700 font-black uppercase tracking-widest text-xs">Standard Plan</div>
             </div>
 
-            <div class="p-12 rounded-[3rem] bg-gradient-to-br from-slate-900 to-[#020617] border-2 border-orange-500 relative shadow-2xl shadow-orange-600/10 scale-105">
+            <div class="pricing-card p-12 rounded-[3rem] bg-gradient-to-br from-slate-900 to-[#020617] border-2 border-orange-500 relative shadow-2xl shadow-orange-600/10 scale-105">
                 <div class="absolute -top-4 right-10 bg-orange-600 text-white px-5 py-1.5 text-[10px] font-black uppercase tracking-[0.2em] rounded-full shadow-lg">Master Baker</div>
                 <h3 class="text-sm font-black uppercase tracking-widest text-orange-500 mb-2">Pro License</h3>
                 <div class="text-5xl font-black mb-10 tracking-tighter">$9</div>
                 <ul class="space-y-5 mb-12 font-medium">
-                    <li class="flex items-center gap-4">✅ Unlimited Limits</li>
-                    <li class="flex items-center gap-4 text-orange-100">✅ Custom Whitelisting</li>
-                    <li class="flex items-center gap-4">✅ Custom Audio Alerts</li>
-                    <li class="flex items-center gap-4">✅ Priority Support</li>
+                    <li class="flex items-center gap-4">✅ Unlimited Custom Limits</li>
+                    <li class="flex items-center gap-4 text-orange-100">✅ Custom Domain Whitelisting</li>
+                    <li class="flex items-center gap-4">✅ Priority Support 🥐</li>
                 </ul>
-                <a href="YOUR_LEMON_SQUEEZY_LINK" class="block w-full py-5 rounded-2xl bg-orange-600 text-white font-black text-center hover:bg-orange-500 transition shadow-xl shadow-orange-600/40 uppercase tracking-widest">Upgrade Now 🥐</a>
+                <a href="YOUR_LEMON_SQUEEZY_LINK" class="block w-full py-5 rounded-2xl bg-orange-600 text-white font-black text-center hover:bg-orange-500 transition shadow-xl shadow-orange-600/40 uppercase tracking-widest">Upgrade Now</a>
             </div>
         </div>
     </section>
 
     <footer class="py-20 text-center border-t border-slate-900/50">
-        <div class="flex items-center justify-center gap-3 mb-6 grayscale opacity-30">
-            <img src="logo.png" class="w-8 h-8 rounded-lg">
-            <span class="font-black tracking-tighter italic">CODE PUNCH BAKERY</span>
+        <div class="flex items-center justify-center gap-4 mb-6 opacity-40 hover:opacity-100 transition-opacity">
+            <img src="logo.png" class="h-6 w-auto grayscale contrast-125">
+            <span class="font-black tracking-tighter italic text-xs">CODE PUNCH BAKERY</span>
         </div>
-        <p class="text-slate-700 text-[10px] tracking-[0.4em] uppercase">Built to empower creators • © 2026</p>
+        <p class="text-slate-700 text-[10px] tracking-[0.4em] uppercase">Built for flow • © 2026</p>
     </footer>
 
 </body>
