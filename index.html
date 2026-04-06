@@ -31,9 +31,7 @@
                     <span class="w-5 h-5 rounded-full border border-orange-500/50 flex items-center justify-center text-orange-500">3</span>
                     <span class="text-slate-400">Master Your Flow</span>
                 </div>
-                <button onclick="document.getElementById('onboarding-bar').style.display='none'" class="ml-4 text-slate-500 hover:text-white transition text-lg">
-                    ✕
-                </button>
+                <button onclick="document.getElementById('onboarding-bar').style.display='none'" class="ml-4 text-slate-500 hover:text-white transition text-lg">✕</button>
             </div>
         </div>
     </div>
@@ -55,7 +53,6 @@
 
     <header class="relative max-w-5xl mx-auto pt-20 pb-32 px-6 text-center">
         <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-orange-600/5 blur-[140px] -z-10"></div>
-
         <div class="inline-flex items-center gap-3 px-5 py-2.5 mb-12 text-[10px] font-black tracking-[0.3em] text-orange-500 uppercase bg-orange-500/5 border border-orange-500/10 rounded-full">
             <span class="relative flex h-2.5 w-2.5">
                 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75"></span>
@@ -63,32 +60,20 @@
             </span>
             V2.5 Live: Built for Focus
         </div>
-
         <h1 class="text-6xl md:text-9xl font-black leading-[0.9] mb-10 tracking-tighter italic">
             To keep you <br>
             <span class="text-transparent bg-clip-text bg-gradient-to-br from-orange-400 via-orange-500 to-orange-800">Focused.</span>
         </h1>
-        
         <p class="text-xl md:text-2xl text-slate-500 max-w-2xl mx-auto mb-16 leading-relaxed font-medium">
             The digital bouncer for your browser. FocusFlow Pro pauses excess tabs to keep your current mission sacred.
         </p>
-
         <div class="flex flex-col items-center gap-5 mb-16 animate-fade-in group">
-            <div class="relative">
-                <div class="absolute -inset-6 bg-orange-600/25 blur-2xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                <img src="icon.png" alt="FocusFlow Extension Icon" class="relative w-28 h-28 rounded-[2rem] shadow-2xl border-8 border-[#020617] bg-[#0f172a] transform group-hover:rotate-6 transition-all duration-500">
-            </div>
+            <img src="icon.png" class="w-28 h-28 rounded-[2rem] shadow-2xl border-8 border-[#020617] bg-[#0f172a] transform group-hover:rotate-6 transition-all duration-500">
             <span class="text-[10px] font-black tracking-[0.5em] text-slate-600 uppercase">Extension Identity</span>
         </div>
-
         <div class="flex flex-col sm:flex-row justify-center items-center gap-8">
-            <a href="YOUR_CHROME_STORE_LINK" class="group relative bg-white text-black px-14 py-6 rounded-[2rem] font-black text-2xl transition-all hover:scale-105 active:scale-95 shadow-[0_20px_50px_rgba(255,255,255,0.1)]">
-                Add to Chrome
-                <span class="block text-[10px] uppercase tracking-[0.2em] font-bold opacity-50 mt-1">Free for Professionals</span>
-            </a>
-            <a href="#pricing" class="text-slate-500 hover:text-white font-black text-lg transition-colors flex items-center gap-3 group">
-                Unlock Pro 👑 <span class="group-hover:translate-x-2 transition-transform">→</span>
-            </a>
+            <a href="YOUR_CHROME_STORE_LINK" class="group relative bg-white text-black px-14 py-6 rounded-[2rem] font-black text-2xl transition-all hover:scale-105 active:scale-95 shadow-[0_20px_50px_rgba(255,255,255,0.1)]">Add to Chrome</a>
+            <a href="#pricing" class="text-slate-500 hover:text-white font-black text-lg transition-colors group">Unlock Pro 👑</a>
         </div>
     </header>
 
@@ -101,25 +86,42 @@
                     <li class="flex items-center gap-4">✅ Fixed 10-Tab Limit</li>
                     <li class="flex items-center gap-4">✅ Peak Productivity Flow</li>
                     <li class="flex items-center gap-4">✅ Core Focus Protection</li>
-                    <li class="flex items-center gap-4 text-xs italic opacity-50">"To keep you focused..."</li>
                 </ul>
                 <div class="w-full py-4 text-center rounded-2xl border border-slate-800 text-slate-700 font-black uppercase tracking-widest text-xs">Standard Plan</div>
             </div>
 
             <div class="pricing-card p-12 rounded-[3rem] bg-gradient-to-br from-slate-900 to-[#020617] border-2 border-orange-500 relative shadow-2xl shadow-orange-600/10 scale-105">
-                <div class="absolute -top-4 right-10 bg-orange-600 text-white px-5 py-1.5 text-[10px] font-black uppercase tracking-[0.2em] rounded-full shadow-lg">Master Baker</div>
-                <h3 class="text-sm font-black uppercase tracking-widest text-orange-500 mb-2">Pro License</h3>
-                <div class="text-5xl font-black mb-10 tracking-tighter">$9</div>
+                <div class="absolute -top-4 right-10 bg-orange-600 text-white px-5 py-1.5 text-[10px] font-black uppercase tracking-[0.2em] rounded-full shadow-lg">Launch Special 🚀</div>
+                <h3 class="text-sm font-black uppercase tracking-widest text-orange-500 mb-2">Master Baker License</h3>
+                <div class="flex items-baseline gap-2 mb-10">
+                    <span class="text-5xl font-black tracking-tighter">$1.99</span>
+                    <span class="text-slate-500 line-through text-lg font-bold">$9.00</span>
+                </div>
                 <ul class="space-y-5 mb-12 font-medium">
                     <li class="flex items-center gap-4">✅ Unlimited Custom Limits</li>
                     <li class="flex items-center gap-4 text-orange-100">✅ Custom Domain Whitelisting</li>
-                    <li class="flex items-center gap-4">✅ Cloud-Sync Preferences</li>
-                    <li class="flex items-center gap-4">✅ Priority Support 🥐</li>
+                    <li class="flex items-center gap-4">✅ Cloud-Sync preferences</li>
+                    <li class="flex items-center gap-4">✅ One-time payment</li>
                 </ul>
-                <a href="YOUR_LEMON_SQUEEZY_LINK" class="block w-full py-5 rounded-2xl bg-orange-600 text-white font-black text-center hover:bg-orange-500 transition shadow-xl shadow-orange-600/40 uppercase tracking-widest">Upgrade Now</a>
+                <a href="YOUR_PAYMENT_LINK" class="block w-full py-5 rounded-2xl bg-orange-600 text-white font-black text-center hover:bg-orange-500 transition shadow-xl shadow-orange-600/40 uppercase tracking-widest">Get Pro Access</a>
             </div>
         </div>
     </section>
 
     <footer class="py-20 text-center border-t border-slate-900/50">
-        <div class="
+        <div class="flex items-center justify-center gap-4 mb-6 opacity-40 hover:opacity-100 transition-opacity">
+            <img src="logo.png" class="h-6 w-auto grayscale rounded-md border border-white/5">
+            <span class="font-black tracking-tighter italic text-xs uppercase">Code Punch Bakery</span>
+        </div>
+        <p class="text-slate-700 text-[10px] tracking-[0.4em] uppercase">Built for flow • © 2026</p>
+    </footer>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('status') !== 'welcome') {
+            const bar = document.getElementById('onboarding-bar');
+            if (bar) bar.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
