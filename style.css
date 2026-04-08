@@ -3,6 +3,17 @@
  * style.css - Version 2.5 (High-End Production)
  */
 
+
+/* The "Bakery Glow" Effect */
+.gumroad-button-custom {
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.gumroad-button-custom:hover {
+    box-shadow: 0 0 30px rgba(249, 115, 22, 0.4);
+    transform: translateY(-2px);
+}
+
 /* 1. THE FOUNDATION */
 :root {
     --bakery-orange: #ea580c;
