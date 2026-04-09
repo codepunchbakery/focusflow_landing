@@ -3,6 +3,20 @@
  * style.css - Version 2.5 (High-End Production)
  */
 
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+/* Optional: Smooth fade-in for the entire header */
+header {
+    animation: fadeIn 1.2s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
 
 /* The "Bakery Glow" Effect */
 .gumroad-button-custom {
